@@ -1,0 +1,11 @@
+{
+  "people": [
+    {
+      "id": "1",
+      "firstName": "Rafael",
+      "lastName": "Cruz",
+      "email": "rafael@email.com.br"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
