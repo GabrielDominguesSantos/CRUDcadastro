@@ -1,16 +1,32 @@
 {
   "people": [
     {
-      "id": "1",
       "firstName": "Rafael",
       "lastName": "Cruz",
-      "email": "rafael@email.com.br"
+      "email": "rafael@email.com.br",
+      "phone": "1999563724",
+      "id": "1"
     },
     {
       "firstName": "Gabriel",
       "lastName": "Domingues",
       "email": "gab.domiingues@gmail.com",
+      "phone": "19991327515",
       "id": "sfHXaDddE3I"
+    },
+    {
+      "firstName": "Barack",
+      "lastName": "Obama",
+      "email": "obama@gmail.com",
+      "phone": "195673959794",
+      "id": "-v0SeItPDmA"
+    },
+    {
+      "firstName": "fgagagg",
+      "lastName": "gfbsxdh",
+      "email": "fhdbechc",
+      "phone": "17472928",
+      "id": "bldGs-oaS54"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

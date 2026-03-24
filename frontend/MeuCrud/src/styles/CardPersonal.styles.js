@@ -19,4 +19,12 @@ export default StyleSheet.create({
     fontSize:10
   },
 
+  editButton:{
+    padding: 10
+  },
+
+  deleteButton:{
+    padding: 10
+  }, 
+  
 });

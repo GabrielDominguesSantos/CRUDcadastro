@@ -1,5 +1,5 @@
 import { deletePerson } from "../servers/peopleCrud";
-import { View, Text, Button } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import styles from "../styles/CardPersonal.styles";
 
 function CardPersonal({item, navigation, refresh}){
@@ -18,22 +18,30 @@ function CardPersonal({item, navigation, refresh}){
           {item.email}
         </Text>
 
+        <Text style={styles.email}>
+          {item.phone}
+        </Text>
+
       </View>
 
       <View>
 
-        <Button 
-          title="Editar"
+        <TouchableOpacity
+          style={styles.editButton} 
           onPress={() => navigation.navigate("AddEditScreen", {person: item})}
-        />
+        >
+          <Text style={{color: 'blue'}}>Editar</Text>
+        </TouchableOpacity>
 
-        <Button 
-          title="Deletar"
+        <TouchableOpacity
+          style={styles.deleteButton}
           onPress={async () => {
             await deletePerson(item.id);
             refresh();
           }}
-        />
+        >
+          <Text style={{color: 'red'}}>Deletar</Text>
+        </TouchableOpacity>
 
       </View>
 
