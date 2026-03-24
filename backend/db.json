@@ -5,6 +5,12 @@
       "firstName": "Rafael",
       "lastName": "Cruz",
       "email": "rafael@email.com.br"
+    },
+    {
+      "firstName": "Gabriel",
+      "lastName": "Domingues",
+      "email": "gab.domiingues@gmail.com",
+      "id": "sfHXaDddE3I"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
