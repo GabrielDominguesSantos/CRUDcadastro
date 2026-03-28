@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, TextInput, Button } from "react-native";
+import { styles } from "../styles/addEditScreen.styles";
 
-import styles from "../styles/styles";
 
 import { createPerson, updatePerson } from "../servers/peopleCrud";
 
@@ -34,25 +34,31 @@ export default function AddEditScreen({ route, navigation }) {
   return(
     <View style={styles.container}>
 
-      <TextInput 
-        placeholder="First Name"
-        value={firstName}
-        onChangeText={setFirstName}
-      />
-
-      <TextInput 
-        placeholder="Last Name"
-        value={lastName}
-        onChangeText={setLastName}
-      />
-
-      <TextInput 
-        placeholder="Email"
+      <View style={styles.namesContainer}>
+        <TextInput
+          style={styles.inputName}
+          placeholder="Nome"
+          value={firstName}
+          onChangeText={setFirstName}
+        />
+        <TextInput
+          style={styles.inputName}
+          placeholder="Sobrenome"
+          value={lastName}
+          onChangeText={setLastName}
+        />
+      </View>
+      <TextInput
+        style={styles.input}
+        placeholder="E-mail"
         value={email}
         onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
       />
 
       <TextInput 
+        style={styles.input}
         placeholder="Phone"
         value={phone}
         onChangeText={setPhone}
