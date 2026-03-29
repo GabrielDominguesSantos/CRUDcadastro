@@ -1,40 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, FlatList, Button, TextInput } from "react-native";
+import { useEffect, useState } from "react";
+import { View, Text, FlatList, Button, TextInput } from "react-native"
 import loadPeople from "../servers/loadPeople";
+import inputFilter from "../servers/inputFilter";
 import CardPersonal from "../components/CardPersonal";
 import styles from "../styles/styles";
 
-import { getPeople, deletePerson } from "../servers/peopleCrud";
-
 export default function HomeScreen({ navigation }) {
+
   // estado da lista
   const [people, setPeople] = useState([]);
   const [searchText, setSearchText] = useState('');
   const [list, setList] = useState([]);
-// executa ao abrir tela
+
+  // executa ao abrir tela
   useEffect(() => {
     loadPeople(setPeople, setList);
   }, []);
 
+  // padroniza os inputs da barra de pesquisa
   useEffect(() => {
-    if (searchText.trim() === '') {
-      setList(people);
-    } else {
-      // 2. Transforma o termo de busca em minúsculo uma única vez
-      const textLower = searchText.toLowerCase();
-
-      // 3. Filtra a lista original (people)
-      const filtered = people.filter(item => {
-        // Pegamos os valores, garantindo que sejam strings (mesmo que venham null)
-        const fName = (item.firstName ?? '').toLowerCase();
-        const lName = (item.lastName ?? '').toLowerCase();
-
-        // O .includes() retorna true ou false diretamente
-        return fName.includes(textLower) || lName.includes(textLower);
-      });
-
-      setList(filtered);
-    }
+    inputFilter(people, searchText, setList);
   }, [searchText, people]);
 
   return (

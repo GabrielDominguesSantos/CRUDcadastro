@@ -41,6 +41,13 @@
       "lastName": "Bixo",
       "email": "olocobixo@example.com",
       "phone": "19928472473"
+    },
+    {
+      "id": "9a9b",
+      "firstName": "Xuxa",
+      "lastName": "lima",
+      "email": "xuxa@example.com",
+      "phone": "1993948284"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
