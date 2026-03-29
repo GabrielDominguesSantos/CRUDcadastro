@@ -8,6 +8,16 @@ export default StyleSheet.create({
     backgroundColor:"#f5f5f5"
   },
 
+  input:{
+    height: 45,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    marginVertical: 10,
+    paddingHorizontal: 15,
+    backgroundColor: '#fff'
+  },
+
   title:{
     fontSize:22,
     textAlign:"center",

@@ -15,18 +15,32 @@
       "id": "sfHXaDddE3I"
     },
     {
-      "firstName": "Barack",
-      "lastName": "Obama",
-      "email": "obama@gmail.com",
-      "phone": "195673959794",
-      "id": "-v0SeItPDmA"
+      "id": "36e1",
+      "firstName": "Rita",
+      "lastName": "Domingues",
+      "email": "rita@example.com",
+      "phone": "199912453769"
     },
     {
-      "firstName": "fgagagg",
-      "lastName": "gfbsxdh",
-      "email": "fhdbechc",
-      "phone": "17472928",
-      "id": "bldGs-oaS54"
+      "id": "a4d5",
+      "firstName": "Dummy",
+      "lastName": "Test",
+      "email": "dummy@example.com",
+      "phone": "1137583758"
+    },
+    {
+      "id": "e916",
+      "firstName": "Fabiano",
+      "lastName": "Gomes",
+      "email": "fabiano@example.com",
+      "phone": "19992748284"
+    },
+    {
+      "id": "cc3e",
+      "firstName": "Oloco",
+      "lastName": "Bixo",
+      "email": "olocobixo@example.com",
+      "phone": "19928472473"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
