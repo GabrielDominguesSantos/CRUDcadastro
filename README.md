@@ -4,6 +4,11 @@
 
 Este projeto é um sistema simples de criação de usuários, onde você consegue criar, editar e deletar qualquer usuário cadastrado no sistema. Todos os usuários são listados na tela inicial apresentando seus respectivos nome, email e telefone. O intuito da criação desta aplicação é treinar conceitos como métodos CRUD e sua relação com o banco de dados, integração de frontend e backend no mesmo projeto, e o uso de APIs.
 
+## 🎥​ Vídeo do projeto funcionando
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/af9aefc5-eca7-4fcf-aaa4-0276578bc004" controls width="600"/>
+</div>
+
 ## 🛠️ Tecnologias
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" heigth="100" width="100"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg" heigth="100" width="100"/> 
@@ -102,5 +107,3 @@ O aplicativo foi construído com **React Native e Expo**, utilizando uma interfa
 O maior diferencial técnico desta solução é a implementação de **Túneis HTTP (LocalTunnel/ngrok)**.
 - **O Problema:** Dispositivos móveis físicos muitas vezes não conseguem acessar o ``localhost`` do computador de desenvolvimento devido a restrições de rede ou IP.
 - **A Solução:** Ao criar um túnel para a porta ``3000``, a API local ganha uma URL pública temporária. Isso permite que o aplicativo, rodando em qualquer rede (Wi-Fi ou 4G), consiga realizar requisições ao backend sem configurações complexas de firewall.
-
-## 🎥​ Vídeo do projeto funcionando
