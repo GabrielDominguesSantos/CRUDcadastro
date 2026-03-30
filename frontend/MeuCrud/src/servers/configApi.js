@@ -1,1 +1,1 @@
-export const API_URL = "https://six-pianos-shake.loca.lt";
+export const API_URL = "https://modern-zebras-rule.loca.lt";

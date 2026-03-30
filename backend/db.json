@@ -36,18 +36,11 @@
       "phone": "19992748284"
     },
     {
-      "id": "cc3e",
-      "firstName": "Oloco",
-      "lastName": "Bixo",
-      "email": "olocobixo@example.com",
-      "phone": "19928472473"
-    },
-    {
-      "id": "9a9b",
+      "id": "abf5",
       "firstName": "Xuxa",
-      "lastName": "lima",
+      "lastName": "Lime",
       "email": "xuxa@example.com",
-      "phone": "1993948284"
+      "phone": "19939472737"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { View, Text, FlatList, Button, TextInput } from "react-native"
+import { useFocusEffect } from "@react-navigation/native";
 import loadPeople from "../servers/loadPeople";
 import inputFilter from "../servers/inputFilter";
 import CardPersonal from "../components/CardPersonal";
@@ -13,9 +14,11 @@ export default function HomeScreen({ navigation }) {
   const [list, setList] = useState([]);
 
   // executa ao abrir tela
-  useEffect(() => {
-    loadPeople(setPeople, setList);
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      loadPeople(setPeople, setList);
+    }, [])
+  );
 
   // padroniza os inputs da barra de pesquisa
   useEffect(() => {
