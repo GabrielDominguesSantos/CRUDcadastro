@@ -1,8 +1,8 @@
-# 💡 Projeto de básico de cadastro de usuários 
+# 💡 Projeto de cadastro de usuários 
 
 ## 📝​ Descrição do Projeto
 
-Este projeto é um sistema simples de criação de usuários, onde você consegue criar, editar e deletar qualquer usuário cadastrado no sistema. Todos os usuários são listados na tela inicial apresentando seus respectivos nome, email e telefone. O intuito da criação desta aplicação é treinar conceitos como métodos CRUD e sua relação com o banco de dados, integração de frontend e backend no mesmo projeto, e o uso de APIs.
+Este projeto é um sistema de criação de usuários, onde você consegue criar, editar e deletar qualquer usuário cadastrado no sistema. Todos os usuários são listados na tela inicial apresentando seus respectivos nome, email e telefone. O intuito da criação desta aplicação é treinar conceitos como métodos CRUD e sua relação com o banco de dados, integração de frontend e backend no mesmo projeto, e o uso de APIs.
 
 ## 🎥​ Vídeo do projeto funcionando
 <div align="center">
