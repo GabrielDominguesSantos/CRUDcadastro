@@ -59,19 +59,20 @@ Antes de começar, certifique-se de ter instalado:
 ## 🥏 Executando o Projeto:
 Em três terminais distintos, você deve executar as seguintes operações:
 ### Executando Expo:
-No primeiro terminal, inicialize o projeto com expo (na raíz do projeto)
-   - Se usará a mesma internet entre o PC e Celular:
+No primeiro terminal, inicialize o projeto com expo
+- Na pasta ```frontend/MeuCrud``` <br>
+  Se usar a mesma internet entre o PC e Celular:
    ```bash
    npx expo start
    ```
-   - Se não usar, utilize:
+  Se não usar, utilize:
    ```bash
    npx expo start --tunnel
    ```
-  o ```--tunnel``` serve para criar um tunnel entre o PC e o celular, permitindo rodar a aplicação sem que eles estejam na mesma internet
+  O ```--tunnel``` serve para criar um tunnel entre o PC e o celular, permitindo rodar a aplicação sem que eles estejam na mesma internet
 ### Executando json-server
 No seu segundo terminal, simule o BackEnd utilizando o json-server
-- Na raíz do seu projeto, execute:
+- Na pasta ```backend```, execute:
   ```bash
   npx json-server --watch db.json --port 3000  
   ```
@@ -82,8 +83,7 @@ No terceiro e último terminal, voce deve escolher uma forma de conectar a API q
 
 #### LocalTunnel
 O LocalTunnel cria um tunel entre a API e o seu dispositivo, permitindo que o celular acesse a API mesmo em redes diferentes.
-
-1. Inicie o tunnel:
+- Na pasta ```backend```, execute:
    ```bash
    npx lt --port 3000
    ```
